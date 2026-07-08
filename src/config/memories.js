@@ -16,9 +16,9 @@ export const BIRTHDAY_CONFIG = {
     },
     {
       id: 2,
-      title: "First Late Night Drive",
+      title: "Random Talks",
       date: "2022",
-      description: "Chasing the sunrise, singing at the top of our lungs, and getting completely lost in the hills. I would get lost with you any day.",
+      description: "At this point, I think we'd already started talking—just little conversations here and there, teasing each other and sharing small laughs. Nothing serious, and we definitely weren't consistent. But somehow, even those tiny moments became memories I'd end up holding onto. Looking back now, it's funny how something so simple was the beginning of everything.",
       image: "/images/memory2.jpg"
     },
     {
