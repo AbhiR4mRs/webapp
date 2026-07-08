@@ -10,42 +10,42 @@ export const BIRTHDAY_CONFIG = {
     {
       id: 1,
       title: "College Orientation Day",
-      date: "August 2021",
+      date: "2021",
       description: "Remember that awkward college orientation where we both ended up sitting in the wrong classroom? That was the day I met you, and it turned out to be the best mistake of my life.",
       image: "/images/memory1.jpg"
     },
     {
       id: 2,
       title: "First Late Night Drive",
-      date: "December 2022",
+      date: "2022",
       description: "Chasing the sunrise, singing at the top of our lungs, and getting completely lost in the hills. I would get lost with you any day.",
       image: "/images/memory2.jpg"
     },
     {
       id: 3,
       title: "The Waffle Hunt",
-      date: "April 2023",
+      date: "2023",
       description: "Walking 5 miles in the pouring rain just to try that viral waffle place, only to find out it was closed. We ended up eating instant noodles, and it was perfect.",
       image: "/images/memory3.jpg"
     },
     {
       id: 4,
       title: "Concert of a Lifetime",
-      date: "October 2024",
+      date: "2024",
       description: "Losing our voices screaming the lyrics, standing in the front row, and dancing like nobody was watching. Truly a night to remember.",
       image: "/images/memory4.jpg"
     },
     {
       id: 5,
       title: "Beach Sunset & Deep Talks",
-      date: "January 2025",
+      date: "2025",
       description: "Sitting silently on the sand, watching the waves roll in, and talking about where we'll be in 10 years. No matter where we go, we're locked in.",
       image: "/images/memory5.jpg"
     },
     {
       id: 6,
       title: "Graduation Day!",
-      date: "June 2025",
+      date: "2026",
       description: "The look of pure joy on your face when they called your name, and that tight hug right after. We walked into college as strangers and walked out as absolute best friends.",
       image: "/images/memory6.jpg"
     }
