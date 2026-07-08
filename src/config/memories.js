@@ -11,7 +11,7 @@ export const BIRTHDAY_CONFIG = {
       id: 1,
       title: "College Orientation Day",
       date: "2021",
-      description: "Remember that awkward college orientation where we both ended up sitting in the wrong classroom? That was the day I met you, and it turned out to be the best mistake of my life.",
+      description: "This was the first picture I ever took of you. Back then, you were the popular girl I never thought would even notice me. Yet somehow, every time I saw you, I couldn't help but look. It felt like there was an unexplainable connection, even before we ever spoke.",
       image: "/images/memory1.jpg"
     },
     {
