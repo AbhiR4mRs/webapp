@@ -37,9 +37,9 @@ export const BIRTHDAY_CONFIG = {
     },
     {
       id: 5,
-      title: "Beach Sunset & Deep Talks",
+      title: "Beyond Friends",
       date: "2025",
-      description: "Sitting silently on the sand, watching the waves roll in, and talking about where we'll be in 10 years. No matter where we go, we're locked in.",
+      description: "By this point, we didn't even need words anymore. Sometimes, all it took was one look, and we already knew what the other person was thinking. We had our endless flirting, countless laughs, random jokes, and so many unforgettable moments together. Everything just felt so easy and natural. Looking back, I truly think that was the best version of us.",
       image: "/images/memory5.jpg"
     },
     {
