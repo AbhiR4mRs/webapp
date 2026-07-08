@@ -1,0 +1,498 @@
+export const BIRTHDAY_CONFIG = {
+  birthdayName: "Karthu",
+  birthdayDate: "2026-07-24T00:00:00", // Format: YYYY-MM-DDTHH:mm:ss
+  
+  // Custom message displayed on the main greeting card
+  cardGreeting: "To my absolute favorite human, happy birthday! Here's a digital treasure chest of our best moments, inside jokes, and wishes from the people who love you most. Tap around to unlock the memories!",
+  
+  // Memory timeline/carousel data
+  memories: [
+    {
+      id: 1,
+      title: "College Orientation Day",
+      date: "August 2021",
+      description: "Remember that awkward college orientation where we both ended up sitting in the wrong classroom? That was the day I met you, and it turned out to be the best mistake of my life.",
+      image: "/images/memory1.jpg"
+    },
+    {
+      id: 2,
+      title: "First Late Night Drive",
+      date: "December 2022",
+      description: "Chasing the sunrise, singing at the top of our lungs, and getting completely lost in the hills. I would get lost with you any day.",
+      image: "/images/memory2.jpg"
+    },
+    {
+      id: 3,
+      title: "The Waffle Hunt",
+      date: "April 2023",
+      description: "Walking 5 miles in the pouring rain just to try that viral waffle place, only to find out it was closed. We ended up eating instant noodles, and it was perfect.",
+      image: "/images/memory3.jpg"
+    },
+    {
+      id: 4,
+      title: "Concert of a Lifetime",
+      date: "October 2024",
+      description: "Losing our voices screaming the lyrics, standing in the front row, and dancing like nobody was watching. Truly a night to remember.",
+      image: "/images/memory4.jpg"
+    },
+    {
+      id: 5,
+      title: "Beach Sunset & Deep Talks",
+      date: "January 2025",
+      description: "Sitting silently on the sand, watching the waves roll in, and talking about where we'll be in 10 years. No matter where we go, we're locked in.",
+      image: "/images/memory5.jpg"
+    },
+    {
+      id: 6,
+      title: "Graduation Day!",
+      date: "June 2025",
+      description: "The look of pure joy on your face when they called your name, and that tight hug right after. We walked into college as strangers and walked out as absolute best friends.",
+      image: "/images/memory6.jpg"
+    }
+  ],
+
+  // Gallery data (timeline photos + 4 new standalone photos)
+  gallery: [
+  {
+    "id": 1,
+    "title": "Special Highlight 🌟",
+    "date": "Special Moment",
+    "image": "/images/gallery1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Special Highlight 🌟",
+    "date": "Special Moment",
+    "image": "/images/gallery2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Special Highlight 🌟",
+    "date": "Special Moment",
+    "image": "/images/gallery3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Special Highlight 🌟",
+    "date": "Special Moment",
+    "image": "/images/gallery4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Video Memory 🎥",
+    "date": "Interactive Video",
+    "image": "/images/IMG_0401.MP4"
+  },
+  {
+    "id": 6,
+    "title": "Video Memory 🎥",
+    "date": "Interactive Video",
+    "image": "/images/IMG_1969.MOV"
+  },
+  {
+    "id": 7,
+    "title": "Video Memory 🎥",
+    "date": "Interactive Video",
+    "image": "/images/IMG_6070.MOV"
+  },
+  {
+    "id": 8,
+    "title": "Timeline Flashback 📸",
+    "date": "Special Moment",
+    "image": "/images/memory1.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Karthu Portrait #9 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_2_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Karthu Portrait #10 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_6_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Karthu Portrait #11 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_8_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Karthu Portrait #12 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_9_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Karthu Portrait #13 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_10_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Karthu Portrait #14 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_11_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Karthu Portrait #15 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_12_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Karthu Portrait #16 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_13_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Karthu Portrait #17 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_14_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Karthu Portrait #18 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_15_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Karthu Portrait #19 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_16_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Karthu Portrait #20 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_17_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Karthu Portrait #21 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_18_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Karthu Portrait #22 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_19_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Karthu Portrait #23 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_20_2026-07-08_17-01-35.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Karthu Portrait #24 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_21_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Karthu Portrait #25 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_22_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Karthu Portrait #26 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_23_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Karthu Portrait #27 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_24_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Karthu Portrait #28 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_25_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Karthu Portrait #29 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_26_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Karthu Portrait #30 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_27_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Karthu Portrait #31 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_28_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Karthu Portrait #32 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_29_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Karthu Portrait #33 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_30_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Karthu Portrait #34 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_31_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Karthu Portrait #35 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_32_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Karthu Portrait #36 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_33_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Karthu Portrait #37 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_34_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Karthu Portrait #38 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_35_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Karthu Portrait #39 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_36_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 40,
+    "title": "Karthu Portrait #40 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_37_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Karthu Portrait #41 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_38_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Karthu Portrait #42 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_39_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Karthu Portrait #43 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_40_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 44,
+    "title": "Karthu Portrait #44 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_41_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Karthu Portrait #45 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_42_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Karthu Portrait #46 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_43_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Karthu Portrait #47 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_44_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Karthu Portrait #48 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_45_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Karthu Portrait #49 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_46_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Karthu Portrait #50 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_47_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Karthu Portrait #51 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_48_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Karthu Portrait #52 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_49_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Karthu Portrait #53 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_50_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Karthu Portrait #54 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_51_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Karthu Portrait #55 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_52_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 56,
+    "title": "Karthu Portrait #56 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_53_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 57,
+    "title": "Karthu Portrait #57 💖",
+    "date": "Special Moment",
+    "image": "/images/photo_54_2026-07-08_17-01-36.jpg"
+  },
+  {
+    "id": 58,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-299154377.jpg"
+  },
+  {
+    "id": 59,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-332586404.jpg"
+  },
+  {
+    "id": 60,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-958701909.jpg"
+  },
+  {
+    "id": 61,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-1025848444.jpg"
+  },
+  {
+    "id": 62,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-1231385583.jpg"
+  },
+  {
+    "id": 63,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-1251656169.jpg"
+  },
+  {
+    "id": 64,
+    "title": "Video Memory 🎥",
+    "date": "Interactive Video",
+    "image": "/images/Snapchat-1258788849.mp4"
+  },
+  {
+    "id": 65,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-1354103540.jpg"
+  },
+  {
+    "id": 66,
+    "title": "Snapchat Moment ✨",
+    "date": "Special Moment",
+    "image": "/images/Snapchat-1544831769.jpg"
+  },
+  {
+    "id": 67,
+    "title": "WhatsApp Memory 💬",
+    "date": "Special Moment",
+    "image": "/images/WhatsApp Image 2025-09-03 at 15.57.47_02924f19.jpg"
+  }
+],
+
+  // Birthday wishes from friends
+  wishes: [
+    {
+      id: 1,
+      from: "Sarah",
+      relation: "Partner in Crime",
+      message: "Happy Birthday Karthu! Thank you for always being the voice of reason when I want to do something crazy (and then joining me anyway). You deserve all the happiness in the world today. Love you lots!",
+      avatarColor: "from-pink-500 to-rose-500"
+    },
+    {
+      id: 2,
+      from: "Rohan",
+      relation: "The Gaming Buddy",
+      message: "Hey Karthu, wishing you a legendary birthday! Thanks for carrying our team in every co-op game we play. May your day be filled with cake, laughter, and zero lag. Let's celebrate soon!",
+      avatarColor: "from-blue-500 to-indigo-500"
+    },
+    {
+      id: 3,
+      from: "Karan",
+      relation: "College Bestie",
+      message: "Happy birthday to the person who helped me survive semester exams! From endless library sessions to late-night coffee runs, I couldn't have done it without you. Have an amazing year ahead!",
+      avatarColor: "from-amber-500 to-orange-500"
+    },
+    {
+      id: 4,
+      from: "Priya",
+      relation: "Childhood Friend",
+      message: "To my oldest friend: Happy Birthday Karthu! We've shared secrets, silly haircuts, and so many dreams since we were kids. Seeing you grow into the incredible person you are today is a gift. Cheers to another year!",
+      avatarColor: "from-emerald-500 to-teal-500"
+    },
+    {
+      id: 5,
+      from: "Kabir",
+      relation: "The Coffee Enthusiast",
+      message: "Karthu, happy birthday! May your coffee always be hot and your work always compile on the first try. Let's catch up soon for a proper birthday espresso!",
+      avatarColor: "from-violet-500 to-purple-500"
+    }
+  ]
+};
