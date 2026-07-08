@@ -23,16 +23,16 @@ export const BIRTHDAY_CONFIG = {
     },
     {
       id: 3,
-      title: "The Waffle Hunt",
+      title: "Understanding You",
       date: "2023",
-      description: "Walking 5 miles in the pouring rain just to try that viral waffle place, only to find out it was closed. We ended up eating instant noodles, and it was perfect.",
+      description: "As time went on, I started to understand that you were carrying a lot more than people could see. I realized you had your own struggles, and behind the smile was someone who just needed to be understood. That's when I made up my mind to stop being just another person watching from a distance and actually start talking to you. Looking back, I'm really glad I did.",
       image: "/images/memory3.jpg"
     },
     {
       id: 4,
-      title: "Concert of a Lifetime",
+      title: "YOU and ME",
       date: "2024",
-      description: "Losing our voices screaming the lyrics, standing in the front row, and dancing like nobody was watching. Truly a night to remember.",
+      description: "And then, little by little, we became close. We started studying together, spending more time with each other, and talking about everything. You trusted me enough to share so much of what you were carrying, and I could truly feel your pain. Somewhere along the way, we stopped feeling like just friends—we became family. A family that chose each other, stood by each other, and made countless memories together.",
       image: "/images/memory4.jpg"
     },
     {
