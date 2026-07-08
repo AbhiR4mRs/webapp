@@ -9,7 +9,7 @@ export const BIRTHDAY_CONFIG = {
   memories: [
     {
       id: 1,
-      title: "College Orientation Day",
+      title: "2021",
       date: "2021",
       description: "This was the first picture I ever took of you. Back then, you were the popular girl I never thought would even notice me. Yet somehow, every time I saw you, I couldn't help but look. It felt like there was an unexplainable connection, even before we ever spoke.",
       image: "/images/memory1.jpg"
