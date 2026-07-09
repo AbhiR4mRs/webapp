@@ -82,11 +82,6 @@ const Countdown = ({ targetDate, name, onComplete }) => {
         </div>
       </div>
       <p className="countdown-footer">Unlocking magical wishes on July 24th, midnight</p>
-      
-      {/* Developer Skip Preview Button */}
-      <button className="skip-test-btn" onClick={onComplete}>
-        Enter Portal (Developer Mode) 🦄
-      </button>
     </div>
   );
 };
