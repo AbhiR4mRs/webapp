@@ -2183,3 +2183,42 @@ body {
   right: calc(50% - 48px);
   transform: rotate(25deg);
 }
+
+/* Styled No-Photo Warning inside details modal */
+.no-photo-unicorn-warning {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px dashed rgba(255, 121, 198, 0.2);
+}
+
+.no-photo-unicorn-warning .warning-emoji {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 12px rgba(255, 121, 198, 0.6));
+}
+
+.no-photo-unicorn-warning h4 {
+  font-size: 1.15rem;
+  color: var(--unicorn-cyan);
+  margin: 0 0 0.6rem 0;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(139, 233, 253, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.no-photo-unicorn-warning p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

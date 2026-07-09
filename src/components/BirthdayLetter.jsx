@@ -1,72 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Calendar, Lock, Unlock, Trash2, Heart } from 'lucide-react';
+import React, { useState } from 'react';
+import { Heart } from 'lucide-react';
 
 const BirthdayLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [entries, setEntries] = useState([]);
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
-  const [expandedEntry, setExpandedEntry] = useState(null);
-
-  // Load entries from localStorage on mount
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem('karthika_future_diary');
-      if (saved) {
-        setEntries(JSON.parse(saved));
-      }
-    } catch (e) {
-      console.error("Failed to load diary entries:", e);
-    }
-  }, []);
-
-  const saveEntries = (newEntries) => {
-    setEntries(newEntries);
-    try {
-      localStorage.setItem('karthika_future_diary', JSON.stringify(newEntries));
-    } catch (e) {
-      console.error("Failed to save diary entries:", e);
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!title.trim() || !content.trim()) return;
-
-    const newEntry = {
-      id: Date.now(),
-      title: title.trim(),
-      content: content.trim(),
-      date: new Date().toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'short', 
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-      })
-    };
-
-    const updated = [newEntry, ...entries];
-    saveEntries(updated);
-    setTitle('');
-    setContent('');
-  };
-
-  const handleDelete = (id, e) => {
-    e.stopPropagation();
-    if (window.confirm("Are you sure you want to delete this capsule letter?")) {
-      const updated = entries.filter(entry => entry.id !== id);
-      saveEntries(updated);
-      if (expandedEntry === id) {
-        setExpandedEntry(null);
-      }
-    }
-  };
 
   return (
     <div className="birthday-letter-section animate-fade-in">
       <h2 className="section-title text-center glow-text">For You</h2>
-      <p className="section-subtitle text-center">A personal letter and capsule space just for you</p>
+      <p className="section-subtitle text-center">A personal letter just for you</p>
 
       {/* Interactive Envelope and Letter */}
       <div className="letter-envelope-container">
@@ -98,120 +39,47 @@ const BirthdayLetter = () => {
             </div>
             
             <div className="letter-body">
-              <p className="letter-salutation">Dear Karthu, 🦄</p>
+              <p className="letter-salutation">Dear Karthu, ❤️</p>
               
               <p>
-                Happy Birthday! I wanted to write you this little note to tell you how incredibly 
-                grateful I am to have you in my life. Meeting you in college was easily the best 
-                thing that could have happened, and every single moment we've shared since orientation 
-                has been filled with smiles and unforgettable memories.
+                You've always been a part of my life. The laughter we shared, the tears we wiped away, and every challenge we faced somehow connected us in a way I once believed could never be broken.
               </p>
               
               <p>
-                You are my absolute favorite human, my partner in crime, and the one person who can 
-                always make me laugh, no matter what. Thank you for all the late-night waffle hunts, 
-                sunrises, deep talks, and all our wonderful inside jokes.
+                All I ever wanted was a friend like you—someone who would always stay in touch, share every little madness, celebrate the smallest moments, and make life feel lighter just by being there. And for a long time, you were exactly that person for me.
               </p>
               
               <p>
-                I hope this year brings you all the magic, success, and pure happiness that you deserve. 
-                No matter where life takes us, we're locked in as best friends forever. Have the most 
-                beautiful day!
+                Somewhere along the way, though, we got lost. Things changed in ways I was always afraid they would. Even now, I know we're still the same people at heart, even if life has taken us in different directions. But that doesn't stop me from missing you.
+              </p>
+              
+              <p>
+                I always imagined things would be different for us. Maybe that's why it's been hard to accept how much has changed. I hope you know that I've always loved you—in the way I've always meant it—with care, respect, admiration, and a place in my heart that will always be yours. No matter where life takes us, the memories we created together will always be among the most beautiful parts of my life.
+              </p>
+              
+              <p>
+                Thank you for being the person who made ordinary days unforgettable, who understood my silence, laughed at my terrible jokes, and stood beside me through moments I'll never forget.
+              </p>
+              
+              <p>
+                On your birthday, I don't wish for anything except your happiness. I hope life gives you every dream you've worked for, every smile you deserve, and people who love you as deeply as you deserve to be loved. I hope you keep shining, just as you always have.
+              </p>
+              
+              <p>
+                I miss you more than you'll probably ever know.
+              </p>
+              
+              <p className="letter-closing" style={{ fontStyle: 'italic', marginTop: '1.5rem', color: 'var(--unicorn-pink)', fontWeight: '700' }}>
+                Happy Birthday, my Radhe. ❤️
               </p>
               
               <div className="letter-signoff">
-                <p>With love always,</p>
-                <p className="letter-signature">Your Best Friend ❤️</p>
+                <p>With love,</p>
+                <p className="letter-signature">Kannan</p>
               </div>
             </div>
           </div>
         )}
-      </div>
-
-      {/* Time Capsules Segment */}
-      <div className="future-writings-section" style={{ marginTop: '3.5rem' }}>
-        <h3 className="capsules-header text-center glow-text">Letters to the Future</h3>
-        <p className="section-subtitle text-center" style={{ fontSize: '0.8rem', marginTop: '-0.3rem' }}>
-          Write and lock down a goal or letter for your future self
-        </p>
-
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="notebook-form glass">
-          <div className="notebook-header">
-            <Mail className="notebook-icon" size={18} />
-            <span>New Capsule Letter</span>
-          </div>
-          <div className="notebook-paper">
-            <input 
-              type="text" 
-              placeholder="Letter Subject / Title..."
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              className="notebook-title-input"
-              required
-              maxLength={60}
-            />
-            <textarea
-              placeholder="Dear Future Karthu..."
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              className="notebook-text-area"
-              required
-              rows={5}
-            ></textarea>
-          </div>
-          <button type="submit" className="notebook-submit-btn">
-            Lock in Time Capsule 🔒
-          </button>
-        </form>
-
-        {/* Saved Items */}
-        <div className="saved-capsules-area">
-          <h4 className="capsules-list-title">Your Time Capsules</h4>
-          {entries.length === 0 ? (
-            <div className="empty-capsules glass">
-              <Lock size={24} className="text-muted" style={{ marginBottom: '0.5rem' }} />
-              <p>No future letters locked. Write your first capsule letter above!</p>
-            </div>
-          ) : (
-            <div className="capsules-list">
-              {entries.map((entry) => {
-                const isExpanded = expandedEntry === entry.id;
-                return (
-                  <div 
-                    key={entry.id}
-                    className={`capsule-card glass ${isExpanded ? 'is-expanded' : ''}`}
-                    onClick={() => setExpandedEntry(isExpanded ? null : entry.id)}
-                  >
-                    <div className="capsule-card-header">
-                      <div className="capsule-card-meta">
-                        <Calendar size={13} className="meta-icon" />
-                        <span>{entry.date}</span>
-                      </div>
-                      <button 
-                        onClick={(e) => handleDelete(entry.id, e)}
-                        className="delete-capsule-btn"
-                      >
-                        <Trash2 size={15} />
-                      </button>
-                    </div>
-                    
-                    <div className="capsule-card-title-row">
-                      {isExpanded ? <Unlock size={16} className="lock-icon-unlocked" /> : <Lock size={16} className="lock-icon" />}
-                      <h4 className="capsule-card-title">{entry.title}</h4>
-                    </div>
-
-                    {isExpanded && (
-                      <div className="capsule-card-body animate-fade-in">
-                        <p className="capsule-content-text">{entry.content}</p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
       </div>
     </div>
   );

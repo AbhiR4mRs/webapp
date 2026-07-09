@@ -284,25 +284,35 @@ function App() {
                 </button>
 
                 <div className="memory-front-photo-wrapper">
-                  <img 
-                    src={selectedMemory.image} 
-                    alt="" 
-                    className="memory-image-blur-bg" 
-                  />
-                  <img 
-                    src={selectedMemory.image} 
-                    alt={selectedMemory.title}
-                    className="memory-image-fg"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.style.display = 'none';
-                      e.target.parentNode.classList.add('image-fallback');
-                    }}
-                  />
-                  <div className="photo-placeholder-overlay">
-                    <span className="photo-placeholder-icon">📸</span>
-                    <span className="photo-placeholder-text">{selectedMemory.date}</span>
-                  </div>
+                  {selectedMemory.image ? (
+                    <>
+                      <img 
+                        src={selectedMemory.image} 
+                        alt="" 
+                        className="memory-image-blur-bg" 
+                      />
+                      <img 
+                        src={selectedMemory.image} 
+                        alt={selectedMemory.title}
+                        className="memory-image-fg"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.style.display = 'none';
+                          e.target.parentNode.classList.add('image-fallback');
+                        }}
+                      />
+                      <div className="photo-placeholder-overlay">
+                        <span className="photo-placeholder-icon">📸</span>
+                        <span className="photo-placeholder-text">{selectedMemory.date}</span>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="no-photo-unicorn-warning glass">
+                      <span className="warning-emoji animate-float">🦄✨</span>
+                      <h4>Locked in Heart</h4>
+                      <p>No camera could capture this chapter, but the feelings are forever.</p>
+                    </div>
+                  )}
 
                   {/* Tap to Rotate indicator badge */}
                   <div className="photo-rotate-badge">
@@ -312,7 +322,9 @@ function App() {
                 </div>
 
                 <div className="memory-front-footer">
-                  <span className="tap-flip-hint glow-text">Tap photo to read story ✨</span>
+                  <span className="tap-flip-hint glow-text">
+                    {selectedMemory.image ? "Tap photo to read story ✨" : "Tap card to read story ✨"}
+                  </span>
                 </div>
               </div>
 
@@ -340,7 +352,9 @@ function App() {
                   <p className="memory-modal-desc">{selectedMemory.description}</p>
                   
                   <div className="memory-back-footer">
-                    <span className="tap-flip-hint">Tap card to see photo 📸</span>
+                    <span className="tap-flip-hint">
+                      {selectedMemory.image ? "Tap card to see photo 📸" : "Tap card to see memory 🦄"}
+                    </span>
                   </div>
                 </div>
               </div>

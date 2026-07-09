@@ -47,7 +47,7 @@ export const BIRTHDAY_CONFIG = {
       title: "Always you",
       date: "2026",
       description: "I think 2026 was the hardest chapter for us. We still had our beautiful moments and our highs, but something had started to change. Looking back, I think the last time we truly talked the way we used to was during that trip. After that, life got busier, people changed, priorities shifted, and somehow we slowly drifted apart. Maybe that's just what time does sometimes—it changes people, changes situations, and changes relationships. But no matter what happened afterward, I'll always be grateful that I got to experience the version of us that once felt so effortless and real.",
-      image: "/images/memory6.jpg"
+      image: ""
     }
   ],
 
